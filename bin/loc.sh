@@ -1,5 +1,5 @@
 #!/bin/zsh
 
 DIR=$1
-
-find $DIR -name '*.php' | xargs wc -l
+EXTENSION=$2
+find $DIR -name '*.'${EXTENSION} | xargs wc -l
